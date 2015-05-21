@@ -1,6 +1,41 @@
-.nav-header {
-  position: relative;
-  margin-top: 0;
-  padding-top: 0;
-  border-bottom: 0 solid rgba 0, 0, 0, 0;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05); }
+body {
+  background-color: #ebebe6; }
+
+/*Nav Header*/
+nav {
+  background-color: #ffffff; }
+
+/* Header*/
+.enav-header-inner {
+  max-width: 980px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.enav-header-inner img {
+  width: 80px;
+  display: block;
+  margin-top: 25px;
+  float: left; }
+
+.enav-header-inner .enav-search {
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px; }
+
+.enav-header-inner .enav-search .search-area {
+  height: 34px;
+  margin-right: 0; }
+
+.enav-header-inner .enav-search .searchBtn {
+  height: 34px;
+  margin: 0; }
+
+.enav-header-inner .enav-browser {
+  float: left;
+  margin: 0;
+  display: block; }
+
+.enav-header-inner .regsigcar {
+  float: right;
+  margin: 0; }

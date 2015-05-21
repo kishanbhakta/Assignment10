@@ -1,4 +1,13 @@
-# 05/20/15
+## Usage
+
+1. clone the repo
+2. Install 'bourbon' and 'neat'
+
+
+
+
+
+<!-- # 05/20/15
 
 ___This homework is due by 8am, on 05/26/15___
 
@@ -40,4 +49,4 @@ Re-Create An Etsy Page - https://www.etsy.com/search?q=whiskey
 
 1. [Etsy API Documentation](https://www.etsy.com/developers/documentation/reference/listing)
 2. [Etsy Payload Example](https://api.etsy.com/v2/listings/active?api_key=h9oq2yf3twf4ziejn10b717i&keywords=whiskey&includes=Images,Shop)
-3. [Etsy Page Example](https://www.etsy.com/search?q=whiskey)
+3. [Etsy Page Example](https://www.etsy.com/search?q=whiskey) -->
