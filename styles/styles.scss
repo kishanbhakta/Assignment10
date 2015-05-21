@@ -1,17 +1,19 @@
-$enavfont: 'Roboto',sans-serif;
+$enavfont: 'Roboto',
+sans-serif;
 // @mixin headmarg($top,$bottom,$right,$left) {margin-top: 25px;
 //                                             margin-bottom: 0p;
 //                                             margin-left: 0
 //                                             margin-right: 0;}
-
 body {
-  background-color: #ebebe6;
+    background-color: #ebebe6;
 }
-      /*Nav Header*/
+/*Nav Header*/
+
 nav {
-  background-color:#ffffff;
+    background-color: #ffffff;
 }
-      /* Header*/
+/* Header*/
+
 .enav-header-inner {
     max-width: 980px;
     height: 80px;
@@ -21,61 +23,44 @@ nav {
         width: 80px;
         display: block;
         margin-top: 25px;
-        float:left;
+        float: left;
     }
     .enav-search {
         float: left;
         margin-left: 20px;
         margin-top: 20px;
-      .search-area {
-        height: 34px;
-        margin-right: 0;
-      }
-      .searchBtn {
-        height: 34px;
-        margin: 0;
-      }
+        .search-area {
+            height: 34px;
+            margin-right: 0;
+        }
+        .searchBtn {
+            height: 34px;
+            margin: 0;
+        }
     }
-    .enav-browser{
+    .enav-browser {
         float: left;
         margin: 0;
         display: block;
     }
     .regsigcar {
-      float: right;
-      margin:0;
-
-    .register{
-
-    }
-    .sign-in {
-
-    }
-    .cart {
-
+        float: right;
+        margin: 0;
+        .register {}
+        .sign-in {}
+        .cart {}
     }
 }
-}
-
-
 /*Main Content - Neat --> Nesting Column*/
-.mainContent{
-  @include outer-container;
 
-/* Product Grid */
+.mainContent {
+    @include outer-container;
+    /* Product Grid */
 
-  ul {
-    @include span-columns (9);
-    li {
-      @include span-columns(3 of 9);
+    ul {
+        @include span-columns (9);
+        li {
+            @include span-columns(3 of 9);
+        }
     }
 }
-}
-
-
-
-
-
-
-
-
