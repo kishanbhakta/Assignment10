@@ -49,6 +49,9 @@ nav {
   color: white;
   border: 1px solid #CFCBC8; }
 
+.enav-header-inner .enav-search .searchBtn:hover {
+  background-color: #37bbdb; }
+
 .enav-header-inner .enav-browser {
   float: left;
   margin: 0;
