@@ -32,12 +32,22 @@ nav {
   margin-top: 20px; }
 
 .enav-header-inner .enav-search .search-area {
-  height: 34px;
-  margin-right: 0; }
+  height: 35px;
+  width: 252px;
+  margin-right: 0;
+  margin-bottom: 1px;
+  postion: relative;
+  border: 1px solid #CFCBC8; }
 
 .enav-header-inner .enav-search .searchBtn {
-  height: 34px;
-  margin: 0; }
+  height: 35px;
+  width: 80px;
+  postion: absolute;
+  margin-left: -5px;
+  margin-top: -2px;
+  background-color: #32a4bf;
+  color: white;
+  border: 1px solid #CFCBC8; }
 
 .enav-header-inner .enav-browser {
   float: left;
@@ -70,7 +80,8 @@ section {
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
-  width: 245px; }
+  width: 245px;
+  margin-right: 0; }
 
 section:last-child {
   margin-right: 0; }
@@ -83,7 +94,7 @@ div.sideBarT {
   height: 383px;
   width: 245px;
   background: #FFFFFF;
-  margin: 0 5px 10px;
+  margin: 0 0 10px;
   border: 1px solid #B2B2B2;
   font-size: 16px; }
 
@@ -98,7 +109,7 @@ div.sideBarB {
   height: 656px;
   width: 245px;
   background: #FFFFFF;
-  margin: 0 5px 10px;
+  margin: 0 0 10px;
   border: 1px solid #B2B2B2; }
 
 div.sideBarB:last-child {
@@ -111,7 +122,9 @@ ul {
   margin-right: 2.35765%;
   width: 74.41059%;
   width: 717px;
-  float: right; }
+  float: right;
+  padding: 0;
+  margin-top: 50px; }
 
 ul:last-child {
   margin-right: 0; }
@@ -122,6 +135,7 @@ li {
   margin-right: 3.16844%;
   width: 31.22104%;
   height: 220px;
+  width: 225px;
   background: #FFFFFF;
   margin: 0 5px 10px;
   border: 1px solid #B2B2B2;
