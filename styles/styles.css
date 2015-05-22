@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
 body {
   background-color: #ebebe6; }
 
@@ -39,3 +47,85 @@ nav {
 .enav-header-inner .regsigcar {
   float: right;
   margin: 0; }
+
+/*Main Content - Neat --> Nesting Column*/
+div.mainContent {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 980px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto; }
+
+div.mainContent::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+/*Side Bar*/
+section {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  width: 245px; }
+
+section:last-child {
+  margin-right: 0; }
+
+div.sideBarT {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  height: 383px;
+  width: 245px;
+  background: #FFFFFF;
+  margin: 0 5px 10px;
+  border: 1px solid #B2B2B2;
+  font-size: 16px; }
+
+div.sideBarT:last-child {
+  margin-right: 0; }
+
+div.sideBarB {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  height: 656px;
+  width: 245px;
+  background: #FFFFFF;
+  margin: 0 5px 10px;
+  border: 1px solid #B2B2B2; }
+
+div.sideBarB:last-child {
+  margin-right: 0; }
+
+/* Product Grid */
+ul {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  width: 717px;
+  float: right; }
+
+ul:last-child {
+  margin-right: 0; }
+
+li {
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 31.22104%;
+  height: 220px;
+  background: #FFFFFF;
+  margin: 0 5px 10px;
+  border: 1px solid #B2B2B2;
+  font-size: 16px; }
+
+li:last-child {
+  margin-right: 0; }

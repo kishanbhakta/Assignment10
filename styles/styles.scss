@@ -1,9 +1,7 @@
+@import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat";
 $enavfont: 'Roboto',
 sans-serif;
-// @mixin headmarg($top,$bottom,$right,$left) {margin-top: 25px;
-//                                             margin-bottom: 0p;
-//                                             margin-left: 0
-//                                             margin-right: 0;}
 body {
     background-color: #ebebe6;
 }
@@ -53,14 +51,53 @@ nav {
 }
 /*Main Content - Neat --> Nesting Column*/
 
-.mainContent {
+div.mainContent {
     @include outer-container;
-    /* Product Grid */
+    height: 100%;
+    width: 980px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Side Bar*/
 
-    ul {
-        @include span-columns (9);
-        li {
-            @include span-columns(3 of 9);
-        }
-    }
+section {
+  @include span-columns (3);
+    width: 245px;
+}
+
+div.sideBarT {
+    @include span-columns(3);
+    height: 383px;
+    width: 245px;
+    background: #FFFFFF;
+    margin: 0 5px 10px;
+    border: 1px solid #B2B2B2;
+    font-size: 16px;
+}
+
+div.sideBarB {
+    @include span-columns(3);
+    height: 656px;
+    width: 245px;
+    background: #FFFFFF;
+    margin: 0 5px 10px;
+    border: 1px solid #B2B2B2;
+
+}
+/* Product Grid */
+
+ul {
+    @include span-columns(9);
+    width: 717px;
+    float: right;
+}
+
+li {
+    @include span-columns(3 of 9);
+    height: 220px;
+    background: #FFFFFF;
+    margin: 0 5px 10px;
+    border: 1px solid #B2B2B2;
+    font-size: 16px;
 }
