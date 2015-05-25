@@ -117,3 +117,75 @@ div.sideBarB {
 
 div.sideBarB:last-child {
   margin-right: 0; }
+
+/*Product Grid*/
+.productBox {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  width: 717px;
+  float: right;
+  padding: 0;
+  margin-top: 50px;
+  font-size: 13px; }
+
+.productBox:last-child {
+  margin-right: 0; }
+
+.productBox img {
+  width: 223px; }
+
+.productBox .belowTitle {
+  margin-top: 20px;
+  display: inline; }
+
+.productBox .priceAndCurrency {
+  float: right;
+  margin-right: 15px; }
+
+.productBox .dataTitle {
+  padding-left: 12px;
+  white-space: nowrap;
+  margin-bottom: 17px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Roboto", sans-serif; }
+
+.productBox .dataShop {
+  display: inline;
+  color: #B2B2B2;
+  margin-left: 12px; }
+
+.productBox .dataPrice {
+  display: inline;
+  color: #7BBE4C; }
+
+.productBox .dataCurrencyCode {
+  display: inline;
+  color: #7BBE4C; }
+
+.productBox ul {
+  margin: 0 auto;
+  padding: 0; }
+
+.productBox li {
+  list-style: none;
+  height: 235px;
+  border: 1px solid #B2B2B2;
+  background-color: white;
+  margin-bottom: 25px;
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 31.22104%; }
+
+.productBox li:last-child {
+  margin-right: 0; }
+
+.productBox li:nth-child(3n) {
+  margin-right: 0; }
+
+.productBox li:nth-child(3n+1) {
+  clear: left; }
