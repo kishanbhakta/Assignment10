@@ -7,16 +7,16 @@ var urlImage, belowTitle, priceAndCurrency;
 items.results.forEach(function(item) {
 
   urlImage = item.Images[0].url_170x135;
-  dataTitle = '<div class="resultsTitle">' + item.title + '</div>';
-  dataShop = '<div class="resultsShop">' + item.Shop.shop_name + '</div>';
-  dataPrice = '<div class="resultsPrice">' + '$' + item.price + '</div>';
-  dataCurrencyCode = '<div class="resultsCurrencyCode">' + item.currency_code + '</div>';
+  dataTitle = '<div class="dataTitle">' + item.title + '</div>';
+  dataShop = '<div class="dataShop">' + item.Shop.shop_name + '</div>';
+  dataPrice = '<div class="dataPrice">' + '$' + item.price + '</div>';
+  dataCurrencyCode = '<div class="dataCurrencyCode">' + item.currency_code + '</div>';
   dataImage = '<img src="' + urlImage + '" />';
   priceAndCurrency = '<div class="priceAndCurrency">' + dataPrice + ' ' + dataCurrencyCode + '</div>';
   belowTitle = '<div class="belowTitle">' + dataShop + priceAndCurrency  + '</div>';
   dataBox = '<li>' + dataImage + dataTitle + '\n' + belowTitle + '</li>';
 
-  resultsList.append(dataBox);
+  dataList.append(dataBox);
 
   });
 

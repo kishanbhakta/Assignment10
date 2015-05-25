@@ -99,22 +99,3 @@ div.sideBarB {
     border: 1px solid #B2B2B2;
 
 }
-/* Product Grid */
-
-ul {
-    @include span-columns(9);
-    width: 717px;
-    float: right;
-    padding: 0;
-    margin-top: 50px;
-}
-
-li {
-    @include span-columns(3 of 9);
-    height: 220px;
-    width: 225px;
-    background: #FFFFFF;
-    margin: 0 5px 10px;
-    border: 1px solid #B2B2B2;
-    font-size: 16px;
-}
