@@ -34,9 +34,13 @@ nav {
       margin-right: 0;
       margin-bottom: 1px;
       postion: relative;
+<<<<<<< HEAD
       border: 1px solid #CFCBC8;
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px; }
+=======
+      border: 1px solid #CFCBC8; }
+>>>>>>> master
     .enav-header-inner .enav-search .searchBtn {
       height: 35px;
       width: 80px;
@@ -45,14 +49,19 @@ nav {
       margin-top: -2px;
       background-color: #32a4bf;
       color: white;
+<<<<<<< HEAD
       border: 1px solid #CFCBC8;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px; }
+=======
+      border: 1px solid #CFCBC8; }
+>>>>>>> master
     .enav-header-inner .enav-search .searchBtn:hover {
       background-color: #37bbdb; }
   .enav-header-inner .enav-browser {
     float: left;
     margin: 0;
+<<<<<<< HEAD
     display: block;
     margin-top: 20px;
     margin-left: 20px; }
@@ -114,6 +123,12 @@ nav {
       .enav-header-inner .regsigcar .cart .cartTxt {
         margin-top: 1px;
         margin-bottom: 1px; }
+=======
+    display: block; }
+  .enav-header-inner .regsigcar {
+    float: right;
+    margin: 0; }
+>>>>>>> master
 
 /*Main Content - Neat --> Nesting Column*/
 div.mainContent {
@@ -149,10 +164,16 @@ div.sideBarT {
   height: 383px;
   width: 245px;
   background: #FFFFFF;
+<<<<<<< HEAD
   margin: 0 0 25px 0;
   border: 1px solid #d7d7d7;
   font-size: 16px;
   border-radius: 3px; }
+=======
+  margin: 0 0 10px;
+  border: 1px solid #B2B2B2;
+  font-size: 16px; }
+>>>>>>> master
   div.sideBarT:last-child {
     margin-right: 0; }
 
@@ -165,6 +186,7 @@ div.sideBarB {
   width: 245px;
   background: #FFFFFF;
   margin: 0 0 10px;
+<<<<<<< HEAD
   border: 1px solid #d7d7d7;
   border-radius: 3px; }
   div.sideBarB:last-child {
@@ -183,6 +205,14 @@ section .sBB {
 
 /*Product Grid*/
 .productBox {
+=======
+  border: 1px solid #B2B2B2; }
+  div.sideBarB:last-child {
+    margin-right: 0; }
+
+/* Product Grid */
+ul {
+>>>>>>> master
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -190,6 +220,7 @@ section .sBB {
   width: 717px;
   float: right;
   padding: 0;
+<<<<<<< HEAD
   margin-top: 50px;
   font-size: 13px; }
   .productBox:last-child {
@@ -240,3 +271,22 @@ section .sBB {
       margin-right: 0; }
     .productBox li:nth-child(3n+1) {
       clear: left; }
+=======
+  margin-top: 50px; }
+  ul:last-child {
+    margin-right: 0; }
+
+li {
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 31.22104%;
+  height: 220px;
+  width: 225px;
+  background: #FFFFFF;
+  margin: 0 5px 10px;
+  border: 1px solid #B2B2B2;
+  font-size: 16px; }
+  li:last-child {
+    margin-right: 0; }
+>>>>>>> master
