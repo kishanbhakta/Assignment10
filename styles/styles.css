@@ -37,7 +37,9 @@ nav {
   margin-right: 0;
   margin-bottom: 1px;
   postion: relative;
-  border: 1px solid #CFCBC8; }
+  border: 1px solid #CFCBC8;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
 
 .enav-header-inner .enav-search .searchBtn {
   height: 35px;
@@ -47,7 +49,9 @@ nav {
   margin-top: -2px;
   background-color: #32a4bf;
   color: white;
-  border: 1px solid #CFCBC8; }
+  border: 1px solid #CFCBC8;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; }
 
 .enav-header-inner .enav-search .searchBtn:hover {
   background-color: #37bbdb; }
@@ -55,7 +59,18 @@ nav {
 .enav-header-inner .enav-browser {
   float: left;
   margin: 0;
-  display: block; }
+  display: block;
+  margin-top: 20px;
+  margin-left: 20px; }
+
+.enav-header-inner .enav-browser .browseBtn {
+  width: 80px;
+  height: 35px;
+  color: #666;
+  font-size: 14px;
+  border: 1px solid #E5E5E5;
+  background-color: white;
+  border-radius: 3px; }
 
 .enav-header-inner .regsigcar {
   float: right;
@@ -98,8 +113,9 @@ div.sideBarT {
   width: 245px;
   background: #FFFFFF;
   margin: 0 0 10px;
-  border: 1px solid #B2B2B2;
-  font-size: 16px; }
+  border: 1px solid #d7d7d7;
+  font-size: 16px;
+  border-radius: 3px; }
 
 div.sideBarT:last-child {
   margin-right: 0; }
@@ -113,7 +129,8 @@ div.sideBarB {
   width: 245px;
   background: #FFFFFF;
   margin: 0 0 10px;
-  border: 1px solid #B2B2B2; }
+  border: 1px solid #d7d7d7;
+  border-radius: 3px; }
 
 div.sideBarB:last-child {
   margin-right: 0; }
@@ -134,7 +151,7 @@ div.sideBarB:last-child {
   margin-right: 0; }
 
 .productBox img {
-  width: 223px; }
+  width: 222px; }
 
 .productBox .belowTitle {
   margin-top: 20px;
@@ -171,11 +188,12 @@ div.sideBarB:last-child {
   padding: 0; }
 
 .productBox li {
-  list-style: none;
+  list-style-type: none;
   height: 235px;
-  border: 1px solid #B2B2B2;
+  border: 1px solid #d7d7d7;
   background-color: white;
   margin-bottom: 25px;
+  border-radius: 3px;
   float: left;
   display: block;
   margin-right: 3.16844%;
