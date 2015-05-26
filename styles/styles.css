@@ -19,47 +19,40 @@ nav {
   height: 80px;
   margin-left: auto;
   margin-right: auto; }
-
-.enav-header-inner img {
-  width: 80px;
-  display: block;
-  margin-top: 25px;
-  float: left; }
-
-.enav-header-inner .enav-search {
-  float: left;
-  margin-left: 20px;
-  margin-top: 20px; }
-
-.enav-header-inner .enav-search .search-area {
-  height: 35px;
-  width: 252px;
-  margin-right: 0;
-  margin-bottom: 1px;
-  postion: relative;
-  border: 1px solid #CFCBC8; }
-
-.enav-header-inner .enav-search .searchBtn {
-  height: 35px;
-  width: 80px;
-  postion: absolute;
-  margin-left: -5px;
-  margin-top: -2px;
-  background-color: #32a4bf;
-  color: white;
-  border: 1px solid #CFCBC8; }
-
-.enav-header-inner .enav-search .searchBtn:hover {
-  background-color: #37bbdb; }
-
-.enav-header-inner .enav-browser {
-  float: left;
-  margin: 0;
-  display: block; }
-
-.enav-header-inner .regsigcar {
-  float: right;
-  margin: 0; }
+  .enav-header-inner img {
+    width: 80px;
+    display: block;
+    margin-top: 25px;
+    float: left; }
+  .enav-header-inner .enav-search {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px; }
+    .enav-header-inner .enav-search .search-area {
+      height: 35px;
+      width: 252px;
+      margin-right: 0;
+      margin-bottom: 1px;
+      postion: relative;
+      border: 1px solid #CFCBC8; }
+    .enav-header-inner .enav-search .searchBtn {
+      height: 35px;
+      width: 80px;
+      postion: absolute;
+      margin-left: -5px;
+      margin-top: -2px;
+      background-color: #32a4bf;
+      color: white;
+      border: 1px solid #CFCBC8; }
+    .enav-header-inner .enav-search .searchBtn:hover {
+      background-color: #37bbdb; }
+  .enav-header-inner .enav-browser {
+    float: left;
+    margin: 0;
+    display: block; }
+  .enav-header-inner .regsigcar {
+    float: right;
+    margin: 0; }
 
 /*Main Content - Neat --> Nesting Column*/
 div.mainContent {
@@ -71,11 +64,10 @@ div.mainContent {
   padding: 0;
   margin-left: auto;
   margin-right: auto; }
-
-div.mainContent::after {
-  clear: both;
-  content: "";
-  display: table; }
+  div.mainContent::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 /*Side Bar*/
 section {
@@ -85,9 +77,8 @@ section {
   width: 23.23176%;
   width: 245px;
   margin-right: 0; }
-
-section:last-child {
-  margin-right: 0; }
+  section:last-child {
+    margin-right: 0; }
 
 div.sideBarT {
   float: left;
@@ -100,9 +91,8 @@ div.sideBarT {
   margin: 0 0 10px;
   border: 1px solid #B2B2B2;
   font-size: 16px; }
-
-div.sideBarT:last-child {
-  margin-right: 0; }
+  div.sideBarT:last-child {
+    margin-right: 0; }
 
 div.sideBarB {
   float: left;
@@ -114,9 +104,8 @@ div.sideBarB {
   background: #FFFFFF;
   margin: 0 0 10px;
   border: 1px solid #B2B2B2; }
-
-div.sideBarB:last-child {
-  margin-right: 0; }
+  div.sideBarB:last-child {
+    margin-right: 0; }
 
 /* Product Grid */
 ul {
@@ -128,9 +117,8 @@ ul {
   float: right;
   padding: 0;
   margin-top: 50px; }
-
-ul:last-child {
-  margin-right: 0; }
+  ul:last-child {
+    margin-right: 0; }
 
 li {
   float: left;
@@ -143,6 +131,5 @@ li {
   margin: 0 5px 10px;
   border: 1px solid #B2B2B2;
   font-size: 16px; }
-
-li:last-child {
-  margin-right: 0; }
+  li:last-child {
+    margin-right: 0; }
