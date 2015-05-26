@@ -60,21 +60,66 @@ nav {
         margin-top: 20px;
         margin-left: 20px;
         .browseBtn {
-        width: 80px;
-        height: 35px;
-        color:#666;
-        font-size: 14px;
-        border: 1px solid #E5E5E5;
-        background-color: white;
-        border-radius: 3px;
+            width: 80px;
+            height: 35px;
+            color: #666;
+            font-size: 14px;
+            border: 1px solid #E5E5E5;
+            background-color: transparent;
+            border-radius: 3px;
+            padding: 0;
+            position: relative;
+        }
+        .arrow-down {
+            width: 0;
+            height: 0;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 4px solid #bbb;
+            position: relative;
+            margin-top: -18px;
+            margin-left: 65px;
         }
     }
     .regsigcar {
         float: right;
-        margin: 0;
-        .register {}
-        .sign-in {}
-        .cart {}
+        // margin: 0;
+        position: relative;
+        margin-top: 20px;
+        .register {
+            list-style-type: none;
+            position: absolute;
+            margin-left: -170px;
+            margin-top: 10px;
+            font-size: 14.5px
+        }
+        .sign-in {
+            list-style-type: none;
+            position: absolute;
+            margin-left: -90px;
+            color: #32a4bf;
+            .signinBtn {
+                width: 65px;
+                height: 35px;
+                font-size: 13px;
+                background-color: white;
+                border: 1px solid #32a4bf;
+                border-radius: 3px;
+            }
+        }
+        .cart {
+            list-style-type: none;
+            position: absolute;
+            margin-top: 10px;
+            margin-left: -5px;
+            font-size: 12px;
+            .cart-image {
+                content: url(http://www.wpclipart.com/food/cooking/shopping_cart.png);
+                width: 20px;
+                margin-bottom: 5px;
+                margin-top: -14px;
+            }
+        }
     }
 }
 /*Main Content - Neat --> Nesting Column*/
@@ -115,16 +160,18 @@ div.sideBarB {
     border: 1px solid #d7d7d7;
     border-radius: 3px;
 }
+
 section .sBT {
-  font-size: 13px;
-  color: #555;
-  margin-top: 30px;
-  margin-bottom: 5px;
+    font-size: 13px;
+    color: #555;
+    margin-top: 30px;
+    margin-bottom: 5px;
 }
+
 section .sBB {
-  font-size: 13px;
-  color: #555;
-  margin-bottom: 5px;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 5px;
 }
 /*Product Grid*/
 
