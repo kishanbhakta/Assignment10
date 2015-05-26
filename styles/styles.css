@@ -1,5 +1,5 @@
-                                                                                                                                                                                                                                                                                                                                                                                           html {
-box-sizing: border-box; }
+html {
+  box-sizing: border-box; }
 
 *,
 *::after,
@@ -113,15 +113,22 @@ nav {
 .enav-header-inner .regsigcar .cart {
   list-style-type: none;
   position: absolute;
-  margin-top: 10px;
+  margin-top: -10px;
   margin-left: -5px;
-  font-size: 12px; }
+  font-size: 12px;
+  border-left: 1px solid #d7d7d7;
+  height: 50px;
+  padding-left: 5px; }
 
 .enav-header-inner .regsigcar .cart .cart-image {
   content: url(http://www.wpclipart.com/food/cooking/shopping_cart.png);
   width: 20px;
   margin-bottom: 5px;
-  margin-top: -14px; }
+  margin-top: 5px; }
+
+.enav-header-inner .regsigcar .cart .cartTxt {
+  margin-top: 1px;
+  margin-bottom: 1px; }
 
 /*Main Content - Neat --> Nesting Column*/
 div.mainContent {
