@@ -2,6 +2,30 @@
 @import "vendor/neat/neat";
 $enavfont: 'Roboto',
 sans-serif;
+$mainBackground: #F5F5F1;
+$linkTextColor: #0192B5; // text along side, links althroughout
+$buttonColor: #37A9C5; // for search and subscribe buttons
+$browseButtonBorder: #E5E5E5; // browse button at top, currency buttons at base, refine boxes @ left side
+$hoverBorder: #B5B5B5;
+$circleFill: #34A8C4; // for checkbox fills
+$logo: #F45800; // top left logo
+$labelFontColor: #555555;
+$hoverFillGrn: #4AB0C9;
+$headerBase: #DBDBD7;
+$sideBoxBorders: #E1E3DF;
+$searchButtonBorder: #398A9D;
+$moneyGreen: #78C042;
+$userNameGrey: #B2B2B2;
+$itemNameGrey: #575757;
+$filterRed: #F40B32;
+$filterOj: #FF7F00;
+$filterYellow: #F3CC0C;
+$filterGrn: #0AC20A;
+$filterBlue: #0CCCF3;
+$filterPurp: #A60CF3;
+$filterBlk: #000000;
+$filterWht: #FFFFFF;
+$filterIconBorder: #E2E2E2;
 body {
     background-color: #ebebe6;
 }
@@ -180,6 +204,8 @@ section .sBB {
     color: #555;
     margin-bottom: 5px;
 }
+
+
 /*Product Grid*/
 
 .productBox {
@@ -192,14 +218,17 @@ section .sBB {
     img {
         width: 222px;
     }
+
     .belowTitle {
         margin-top: 20px;
         display: inline;
     }
+
     .priceAndCurrency {
         float: right;
         margin-right: 15px;
     }
+
     .dataTitle {
         padding-left: 12px;
         white-space: nowrap;
@@ -209,23 +238,28 @@ section .sBB {
         text-overflow: ellipsis;
         font-family: $enavfont;
     }
+
     .dataShop {
         display: inline;
         color: #B2B2B2;
         margin-left: 12px;
     }
+
     .dataPrice {
         display: inline;
         color: #7BBE4C;
     }
+
     .dataCurrencyCode {
         display: inline;
         color: #7BBE4C;
     }
+
     ul {
         margin: 0 auto;
         padding: 0;
     }
+
     li {
         list-style-type: none;
         height: 235px;
