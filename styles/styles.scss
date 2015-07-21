@@ -183,13 +183,14 @@ section {
 
 div.sideBarT {
     @include span-columns(3);
-    height: 383px;
+    height: 349px;
     width: 245px;
     background: #FFFFFF;
     margin: 0 0 25px 0;
     border: 1px solid #d7d7d7;
     font-size: 16px;
     border-radius: 3px;
+    color: #0192B5;
 }
 
 div.sideBarB {
@@ -200,6 +201,7 @@ div.sideBarB {
     margin: 0 0 10px;
     border: 1px solid #d7d7d7;
     border-radius: 3px;
+    color: #0192B5;
 }
 
 section .sBT {
@@ -217,11 +219,24 @@ section .sBB {
 
   .topAside {
     width: 245px;
-    height: 400px;
+    height: 349px;
     background-color: $filterWht;
     border: 1px solid $sideBoxBorders;
     border-radius: 3px;
-    color: #0192B5;
+    // color: #0192B5;
+    a {
+        display: inline-block;
+        vertical-align: middle;
+        color: #0192B5;
+        font-size: .85em;
+        text-decoration: none;
+        margin-left: 1.5em;
+      }
+      h5 {
+        color: black;
+        font-size: 1em;
+        margin-left: -.5em;
+      }
   }
   .btmAside {
     width: 245px;
@@ -250,6 +265,7 @@ section .sBB {
       a {
         display: inline-block;
         vertical-align: middle;
+        color: #0192B5;
       }
     }
   }
@@ -362,6 +378,7 @@ section .sBB {
         height: 25px;
         display: block;
         background-color: transparent;
+        color: #0192B5;
 
         .checkbox-link{
           width: 16px;
@@ -378,6 +395,7 @@ section .sBB {
           height: 25px;
           line-height: 1px;
           margin-left: 2px;
+          color: #0192B5;
         }
       }
       .customizeBox{
@@ -406,6 +424,7 @@ section .sBB {
       a {
         display: inline-block;
         vertical-align: middle;
+        color: #0192B5;
       }
     }
     .locLink {
@@ -428,6 +447,7 @@ section .sBB {
         color: $labelFontColor;
         font-size: 13px;
         padding-left: 15px;
+        width: 16.6em;
       }
 
       .selectMenu::after{

@@ -164,13 +164,14 @@ div.sideBarT {
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
-  height: 383px;
+  height: 349px;
   width: 245px;
   background: #FFFFFF;
   margin: 0 0 25px 0;
   border: 1px solid #d7d7d7;
   font-size: 16px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  color: #0192B5; }
 
 div.sideBarT:last-child {
   margin-right: 0; }
@@ -185,7 +186,8 @@ div.sideBarB {
   background: #FFFFFF;
   margin: 0 0 10px;
   border: 1px solid #d7d7d7;
-  border-radius: 3px; }
+  border-radius: 3px;
+  color: #0192B5; }
 
 div.sideBarB:last-child {
   margin-right: 0; }
@@ -203,11 +205,23 @@ section .sBB {
 
 .topAside {
   width: 245px;
-  height: 400px;
+  height: 349px;
   background-color: #FFFFFF;
   border: 1px solid #E1E3DF;
-  border-radius: 3px;
-  color: #0192B5; }
+  border-radius: 3px; }
+
+.topAside a {
+  display: inline-block;
+  vertical-align: middle;
+  color: #0192B5;
+  font-size: .85em;
+  text-decoration: none;
+  margin-left: 1.5em; }
+
+.topAside h5 {
+  color: black;
+  font-size: 1em;
+  margin-left: -.5em; }
 
 .btmAside {
   width: 245px;
@@ -238,7 +252,8 @@ section .sBB {
 
 .btmAside .linkWrap a {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  color: #0192B5; }
 
 .block2 {
   background-color: transparent;
@@ -345,7 +360,8 @@ section .sBB {
   width: 219px;
   height: 25px;
   display: block;
-  background-color: transparent; }
+  background-color: transparent;
+  color: #0192B5; }
 
 .block4 .optionWrap .checkbox-link {
   width: 16px;
@@ -360,7 +376,8 @@ section .sBB {
   vertical-align: middle;
   height: 25px;
   line-height: 1px;
-  margin-left: 2px; }
+  margin-left: 2px;
+  color: #0192B5; }
 
 .block4 .customizeBox {
   margin-top: -17px; }
@@ -388,7 +405,8 @@ section .sBB {
 
 .locWrap a {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  color: #0192B5; }
 
 .locLink {
   line-height: 2.4em;
@@ -413,7 +431,8 @@ section .sBB {
   background-color: transparent;
   color: #555555;
   font-size: 13px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  width: 16.6em; }
 
 .block6 .selectMenu::after {
   font-style: normal;
