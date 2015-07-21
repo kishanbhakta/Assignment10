@@ -1,7 +1,7 @@
 @import "vendor/bourbon/bourbon";
 @import "vendor/neat/neat";
-$enavfont: 'Roboto',
-sans-serif;
+
+$enavfont: 'Roboto',sans-serif;
 $mainBackground: #F5F5F1;
 $linkTextColor: #0192B5; // text along side, links althroughout
 $buttonColor: #37A9C5; // for search and subscribe buttons
@@ -26,6 +26,16 @@ $filterPurp: #A60CF3;
 $filterBlk: #000000;
 $filterWht: #FFFFFF;
 $filterIconBorder: #E2E2E2;
+
+@mixin categoryBox() {
+  background-color: transparent;
+  margin-left: 13px;
+  margin-right: 13px;
+  width: 218px;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+}
+
 body {
     background-color: #ebebe6;
 }
@@ -205,6 +215,255 @@ section .sBB {
     margin-bottom: 5px;
 }
 
+  .topAside {
+    width: 245px;
+    height: 400px;
+    background-color: $filterWht;
+    border: 1px solid $sideBoxBorders;
+    border-radius: 3px;
+    color: #0192B5;
+  }
+  .btmAside {
+    width: 245px;
+    height: 730px;
+    background-color: $filterWht;
+    border: 1px solid $sideBoxBorders;
+    border-radius: 3px;
+
+    .block1 {
+      @include categoryBox();
+      width: 218px;
+      border-bottom: solid 1px $browseButtonBorder;
+    }
+
+    .linkWrap {
+      width: 219px;
+      height: 25px;
+      display: block;
+      background-color: transparent;
+      margin-bottom: -17px;
+
+      input {
+        width: 18px;
+      }
+
+      a {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+    .block2 {
+      @include categoryBox();
+      border-bottom: solid 1px $browseButtonBorder;
+
+      .searchPrice{
+        background: transparent;
+      }
+      .priceField {
+        background: $filterWht;
+        border: solid 1px $sideBoxBorders;
+        width: 75px;
+        height: 40px;
+        border-radius: 3px;
+        padding-left: 22px;
+      }
+
+      .priceField:hover {
+        border: solid 1px $hoverBorder;
+        background: transparent;
+      }
+
+
+      span {
+        background: transparent;
+      }
+
+      .price-search {
+        color: $filterBlk;
+        text-align: middle;
+        width: 40px;
+        height: 40px;
+        border: solid 1px $sideBoxBorders;
+        border-radius: 3px;
+        background: transparent;
+        background: $filterWht;
+      }
+
+      .price-search:hover {
+        border: solid 1px $hoverBorder;
+      }
+    }
+
+    .block3 {
+      @include categoryBox();
+      border-bottom: solid 1px $browseButtonBorder;
+
+      .palette{
+        width: 218px;
+        height: 27px;
+        display: inline-block;
+        background-color: transparent;
+        margin-left: 5px;
+      }
+
+      .colorFilter {
+        width: 22px;
+        height: 22px;
+        border-radius: 3px;
+        border: solid 1px $sideBoxBorders;
+        margin: 0px 3px 0px 0px;
+        box-sizing: border-box;
+        float: left;
+      }
+
+      .red {
+        background-color: $filterRed;
+      }
+
+      .orange {
+        background-color: $filterOj;
+      }
+
+      .yellow {
+        background-color: $filterYellow;
+      }
+
+      .green {
+        background-color: $filterGrn;
+      }
+
+      .blue {
+        background-color: $filterBlue;
+      }
+
+      .purple {
+        background-color: $filterPurp;
+      }
+
+      .black {
+        background-color: $filterBlk;
+      }
+
+      .white {
+        background-color: $filterWht;
+      }
+    }
+
+    .block4 {
+      @include categoryBox();
+      clear: both;
+      border-bottom: solid 1px $browseButtonBorder;
+      height: 85px;
+      color: #0192B5;
+
+      .optionWrap{
+        width: 219px;
+        height: 25px;
+        display: block;
+        background-color: transparent;
+
+        .checkbox-link{
+          width: 16px;
+          height: 16px;
+          line-height: 1em;
+          float: left;
+          display: inline-block;
+          margin-top: 2px;
+          color: #0192B5;
+        }
+
+        a {
+          vertical-align: middle;
+          height: 25px;
+          line-height: 1px;
+          margin-left: 2px;
+        }
+      }
+      .customizeBox{
+        margin-top: -17px;
+      }
+    }
+
+    .block5 {
+      @include categoryBox();
+      clear: both;
+      height: 105px;
+      border-bottom: solid 1px $browseButtonBorder;
+    }
+
+    .locWrap {
+      width: 219px;
+      height: 25px;
+      display: block;
+      background-color: transparent;
+
+      input {
+        width: 18px;
+        margin-right: 5px;
+      }
+
+      a {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    .locLink {
+      line-height: 2.4em;
+      size: 13px;
+      font-family: Arial, sans-serif;
+    }
+
+    .block6 {
+      @include categoryBox();
+      height: 62px;
+      padding-bottom: 4px;
+
+      .selectMenu {
+        height: 38px;
+        border: solid 1px $sideBoxBorders;
+        border-radius: 3px;
+        -webkit-appearance: none;
+        background-color: transparent;
+        color: $labelFontColor;
+        font-size: 13px;
+        padding-left: 15px;
+      }
+
+      .selectMenu::after{
+        font-style: normal;
+        font-weight: 400;
+        text-decoration: none;
+        white-space: nowrap;
+        vertical-align: middle;
+        color: $sideBoxBorders;
+        content: '▾';
+        font-size: 8px;
+        line-height: 8px;
+        pointer-events: none;
+        right: 10px;
+        top: 16px;
+        position: absolute;
+      }
+
+      .selectMenu:hover {
+        border: solid 1px $hoverBorder;
+      }
+    }
+    .sectionLabel{
+      text-decoration: none;
+      font-size: 12px;
+      color: $linkTextColor;
+      background-color: transparent;
+
+      span{
+        font-size: 12px;
+      }
+
+  }
+  .sectionLabel a:hover {
+    text-decoration: underline;
+  }
 
 /*Product Grid*/
 
