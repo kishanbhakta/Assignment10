@@ -183,7 +183,7 @@ section {
 
 div.sideBarT {
     @include span-columns(3);
-    height: 349px;
+    height: 375px;
     width: 245px;
     background: #FFFFFF;
     margin: 0 0 25px 0;
@@ -219,7 +219,7 @@ section .sBB {
 
   .topAside {
     width: 245px;
-    height: 349px;
+    height: 375px;
     background-color: $filterWht;
     border: 1px solid $sideBoxBorders;
     border-radius: 3px;
@@ -228,19 +228,21 @@ section .sBB {
         display: inline-block;
         vertical-align: middle;
         color: #0192B5;
-        font-size: .85em;
+        font-size: .9em;
         text-decoration: none;
         margin-left: 1.5em;
+        margin-bottom: .4em;
       }
       h5 {
         color: black;
         font-size: 1em;
         margin-left: -.5em;
+        margin-bottom: .2em;
       }
   }
   .btmAside {
     width: 245px;
-    height: 730px;
+    height: 745px;
     background-color: $filterWht;
     border: 1px solid $sideBoxBorders;
     border-radius: 3px;
@@ -406,7 +408,7 @@ section .sBB {
     .block5 {
       @include categoryBox();
       clear: both;
-      height: 105px;
+      height: 120px;
       border-bottom: solid 1px $browseButtonBorder;
     }
 
