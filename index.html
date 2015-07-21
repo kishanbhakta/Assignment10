@@ -21,40 +21,232 @@
                     <button class="searchBtn">Search</button>
                 </div>
                 <div class="enav-browser">
-                    <input type="submit" class="browseBtn">
+                    <input type="submit" value="Browse &nbsp;" class="browseBtn">
+                    <div class="arrow-down"></div>
                 </div>
-                <div class="regsigcar">
-                    <div class="register">
-                        <a href="#">Register</a>
-                    </div>
-                    <div class="sign-in">
+                <ul class="regsigcar">
+                    <li class="register">
+                        <a href="#" style="color: #32a4bf; text-decoration: none; ">Register</a>
+                    </li>
+                    <li class="sign-in">
                         <button class="signinBtn">Sign In</button>
-                    </div>
-                    <div class="cart">
+                    </li>
+                    <li class="cart">
                         <div class="cart-image"></div>
-                        <a href="#">Cart</a>
-                    </div>
-                </div>
+                        <a href="#" class="cartTxt" style="color: #555">Cart</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
-
+    <div class="belowHeader">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <div class="mainContent">
-
         <section>
-            <p>TEXT</p>
-            <div class="sideBarT"></div>
-            <p>TEXT</p>
-            <div class="sideBarB"></div>
+        <p class="sBT"><b>&nbsp;Show result for:</b></p>
+            <div class="sideBarT">
+              <div class="topAside">
+
+                <a href="about:blank"><h5 class="link-all searchCat">All Categories</h5></a>
+                <br>
+
+                <a href="about:blank" class="topLink">Home &amp; Living</a><br>
+
+                <a href="about:blank" class="topLink">Art &amp; Collectibles</a><br>
+
+                <a href="about:blank" class="topLink">Weddings</a><br>
+
+                <a href="about:blank" class="topLink">Clothing</a><br>
+
+                <a href="about:blank" class="topLink">Jewelry</a><br>
+
+                <a href="about:blank" class="topLink">Paper &amp; Party Supplies</a><br>
+
+                <a href="about:blank" class="topLink">Accessories</a><br>
+
+                <a href="about:blank" class="topLink">Craft Supplies &amp; Tools</a><br>
+
+                <a href="about:blank" class="topLink">Bags &amp; Purses</a><br>
+
+                <a href="about:blank" class="topLink">Bath &amp; Beauty</a><br>
+
+                <a href="about:blank" class="topLink">Shoes</a><br>
+
+                <a href="about:blank" class="topLink">Books&comma; Movies &amp; Music</a><br>
+
+                <a href="about:blank" class="topLink">Electronics &amp; Accessories</a><br>
+
+                <a href="about:blank" class="topLink">Toys &amp; Games</a><br>
+
+                <a href="about:blank" class="topLink">Pet Supplies</a><br>
+
+              </div>
+            </div>
+            <p class="sBB"><b>&nbsp;Refine your search</b></p>
+            <div class="sideBarB">
+
+                <div class="btmAside">
+
+        <div class="block1">
+          <h5 class ="searchCat">Item Type</h5>
+
+          <div class="linkWrap"><a href="about:blank" style="text-decoration: none; font-size: .85em;">
+          <input type="radio" name="item_type" value="" class="radio" data-form-type="url" checked="checked">
+          All Items</a></div>
+
+          <br>
+
+          <div class="linkWrap"><a href="about:blank" style="text-decoration: none; font-size: .85em;">
+          <input type="radio" name="hand_made" value="" class="radio" data-form-type="url">
+          Hand Made</a></div>
+
+          <br>
+
+          <div class="linkWrap"><a href="about:blank" style="text-decoration: none; font-size: .85em;">
+          <input type="radio" name="vintage" value="" class="radio" data-form-type="url">
+          Vintage</a></div>
+
+          <br>
+
+        </div>
+
+
+        <div class="block2">
+
+        <h5 class ="searchCat">Price</h5>
+
+        <div class="searchPrice">
+          <input type="text" class="priceField" placeholder="Low"></input>
+
+          <span>to</span>
+
+          <input type="text" class="priceField" placeholder="High"></input>
+
+          <button class="price-search">&blacktriangleright;</button>
+        </div>
+
+        </div>
+
+
+        <div class="block3">
+
+          <h5 class ="searchCat">Filter by Color</h5>
+
+          <div class="palette">
+
+          <a href="about:blank">
+            <div class="red colorFilter"></div>
+          </a>
+
+          <a href="about:blank">
+            <div class="orange colorFilter"></div>
+          </a>
+
+          <a href="about:blank">
+            <div class="yellow colorFilter"></div>
+          </a>
+
+          <a href="about:blank">
+            <div class="green colorFilter"></div>
+          </a>
+
+          <a href="about:blank">
+            <div class="blue colorFilter"></div>
+          </a>
+
+          <a href="about:blank">
+            <div class="purple colorFilter"></div>
+          </a>
+
+          <a href="about:blank">
+            <div class="black colorFilter"></div>
+          </a>
+
+          <a href="about:blank">
+            <div class="white colorFilter"></div>
+          </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="block4">
+
+          <h5 class="searchCat">Ordering Options</h5>
+
+          <div class="optionWrap">
+          <a href="about.blank" style="text-decoration: none; font-size: .85em;">
+          <input type="checkbox" name="gift_card"class="checkbox-link" value="true" class="checkbox">Accepts Etsy Giftcards</a></div><br>
+
+          <div class="optionWrap customizeBox">
+          <a href="about.blank" style="text-decoration: none; font-size: .85em;">
+          <input type="checkbox" name="customizable" class="checkbox-link" value="true" class="checkbox">Customizable</a></div><br>
+
+        </div>
+
+        <div class="block5">
+          <h5 class="searchCat">Shop Location</h5>
+
+          <div class="locWrap"><a href="about:blank" style="text-decoration: none; font-size: .85em;">
+          <input type="radio" name="anywhere" value="" class="radio" data-form-type="url" >Anywhere</a>
+          </div>
+
+          <div class="locWrap"><a href="about:blank" style="text-decoration: none; font-size: .85em;">
+          <input type="radio" name="anywhere" value="" class="radio" data-form-type="url">United States</a>
+
+          <a href="about:blank" class="locLink" style="text-decoration: none; font-size: .85em;">Choose a custom location</a>
+
+          </div>
+
+
+        </div>
+
+
+        <div class="block6">
+          <h5 class="searchCat">Ship To</h5>
+
+          <select name="ship_to" class="selectMenu" id="ship_to_select">
+
+            <option value = "ZZ">Choose Country...</option>
+
+            <optgroup>
+            <option value="AU">Australia</option>
+            <option value="CA">Canada</option>
+            <option value="FR">France</option>
+            <option value="DE">Germany</option>
+            <option value="GR">Greece</option>
+            <option value="IE">Ireland</option>
+            <option value="IT">Italy</option>
+            <option value="JP">Japan</option>
+            <option value="NZ">New Zealand</option>
+            <option value="PT">Portugal</option>
+            <option value="RU">Russia</option>
+            <option value="ES">Spain</option>
+            <option value="NL">The Netherlands</option>
+            <option value="GB">United Kingdom</option>
+            <option value="US">United States</option>
+            </optgroup>
+
+          </select>
+        </div>
+
+
+
+
+
+
+
+            </div>
         </section>
 
-        <ul id="productGrid">
-
-
-
-
-
-        </ul>
+        <div class="productBox">
+            <ul id="productGrid">
+            </ul>
+        </div>
     </div>
     <script src="scripts/vendor/items.js"></script>
     <script src="scripts/vendor/jquery-2.1.4.min.js"></script>

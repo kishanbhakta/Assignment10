@@ -1,7 +1,41 @@
 @import "vendor/bourbon/bourbon";
 @import "vendor/neat/neat";
-$enavfont: 'Roboto',
-sans-serif;
+
+$enavfont: 'Roboto',sans-serif;
+$mainBackground: #F5F5F1;
+$linkTextColor: #0192B5; // text along side, links althroughout
+$buttonColor: #37A9C5; // for search and subscribe buttons
+$browseButtonBorder: #E5E5E5; // browse button at top, currency buttons at base, refine boxes @ left side
+$hoverBorder: #B5B5B5;
+$circleFill: #34A8C4; // for checkbox fills
+$logo: #F45800; // top left logo
+$labelFontColor: #555555;
+$hoverFillGrn: #4AB0C9;
+$headerBase: #DBDBD7;
+$sideBoxBorders: #E1E3DF;
+$searchButtonBorder: #398A9D;
+$moneyGreen: #78C042;
+$userNameGrey: #B2B2B2;
+$itemNameGrey: #575757;
+$filterRed: #F40B32;
+$filterOj: #FF7F00;
+$filterYellow: #F3CC0C;
+$filterGrn: #0AC20A;
+$filterBlue: #0CCCF3;
+$filterPurp: #A60CF3;
+$filterBlk: #000000;
+$filterWht: #FFFFFF;
+$filterIconBorder: #E2E2E2;
+
+@mixin categoryBox() {
+  background-color: transparent;
+  margin-left: 13px;
+  margin-right: 13px;
+  width: 218px;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+}
+
 body {
     background-color: #ebebe6;
 }
@@ -29,11 +63,13 @@ nav {
         margin-top: 20px;
         .search-area {
             height: 35px;
-            width:252px;
+            width: 252px;
             margin-right: 0;
             margin-bottom: 1px;
             postion: relative;
             border: 1px solid #CFCBC8;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
         }
         .searchBtn {
             height: 35px;
@@ -44,22 +80,87 @@ nav {
             background-color: #32a4bf;
             color: white;
             border: 1px solid #CFCBC8;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
         }
         .searchBtn:hover {
-          background-color: #37bbdb;
+            background-color: #37bbdb;
         }
     }
     .enav-browser {
         float: left;
         margin: 0;
         display: block;
+        margin-top: 20px;
+        margin-left: 20px;
+        .browseBtn {
+            width: 80px;
+            height: 35px;
+            color: #666;
+            font-size: 14px;
+            border: 1px solid #E5E5E5;
+            background-color: transparent;
+            border-radius: 3px;
+            padding: 0;
+            position: relative;
+        }
+        .arrow-down {
+            width: 0;
+            height: 0;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 4px solid #bbb;
+            position: relative;
+            margin-top: -18px;
+            margin-left: 65px;
+        }
     }
     .regsigcar {
         float: right;
-        margin: 0;
-        .register {}
-        .sign-in {}
-        .cart {}
+        // margin: 0;
+        position: relative;
+        margin-top: 20px;
+        .register {
+            list-style-type: none;
+            position: absolute;
+            margin-left: -170px;
+            margin-top: 10px;
+            font-size: 14.5px
+        }
+        .sign-in {
+            list-style-type: none;
+            position: absolute;
+            margin-left: -90px;
+            color: #32a4bf;
+            .signinBtn {
+                width: 65px;
+                height: 35px;
+                font-size: 13px;
+                background-color: white;
+                border: 1px solid #32a4bf;
+                border-radius: 3px;
+            }
+        }
+        .cart {
+            list-style-type: none;
+            position: absolute;
+            margin-top: -10px;
+            margin-left: -5px;
+            font-size: 12px;
+            border-left: 1px solid #E5E5E5;
+            height: 50px;
+            padding-left: 10px;
+            .cart-image {
+                content: url(http://www.wpclipart.com/food/cooking/shopping_cart.png);
+                width: 20px;
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+            .cartTxt {
+                margin-top: 1px;
+                margin-bottom: 1px;
+            }
+        }
     }
 }
 /*Main Content - Neat --> Nesting Column*/
@@ -75,19 +176,21 @@ div.mainContent {
 /*Side Bar*/
 
 section {
-  @include span-columns (3);
+    @include span-columns (3);
     width: 245px;
     margin-right: 0;
 }
 
 div.sideBarT {
     @include span-columns(3);
-    height: 383px;
+    height: 375px;
     width: 245px;
     background: #FFFFFF;
-    margin: 0 0 10px;
-    border: 1px solid #B2B2B2;
+    margin: 0 0 25px 0;
+    border: 1px solid #d7d7d7;
     font-size: 16px;
+    border-radius: 3px;
+    color: #0192B5;
 }
 
 div.sideBarB {
@@ -96,25 +199,356 @@ div.sideBarB {
     width: 245px;
     background: #FFFFFF;
     margin: 0 0 10px;
-    border: 1px solid #B2B2B2;
-
+    border: 1px solid #d7d7d7;
+    border-radius: 3px;
+    color: #0192B5;
 }
-/* Product Grid */
 
-ul {
+section .sBT {
+    font-size: 13px;
+    color: #555;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+section .sBB {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+  .topAside {
+    width: 245px;
+    height: 375px;
+    background-color: $filterWht;
+    border: 1px solid $sideBoxBorders;
+    border-radius: 3px;
+    // color: #0192B5;
+    a {
+        display: inline-block;
+        vertical-align: middle;
+        color: #0192B5;
+        font-size: .9em;
+        text-decoration: none;
+        margin-left: 1.5em;
+        margin-bottom: .4em;
+      }
+      h5 {
+        color: black;
+        font-size: 1em;
+        margin-left: -.5em;
+        margin-bottom: .2em;
+      }
+  }
+  .btmAside {
+    width: 245px;
+    height: 745px;
+    background-color: $filterWht;
+    border: 1px solid $sideBoxBorders;
+    border-radius: 3px;
+
+    .block1 {
+      @include categoryBox();
+      width: 218px;
+      border-bottom: solid 1px $browseButtonBorder;
+    }
+
+    .linkWrap {
+      width: 219px;
+      height: 25px;
+      display: block;
+      background-color: transparent;
+      margin-bottom: -17px;
+
+      input {
+        width: 18px;
+      }
+
+      a {
+        display: inline-block;
+        vertical-align: middle;
+        color: #0192B5;
+      }
+    }
+  }
+    .block2 {
+      @include categoryBox();
+      border-bottom: solid 1px $browseButtonBorder;
+
+      .searchPrice{
+        background: transparent;
+      }
+      .priceField {
+        background: $filterWht;
+        border: solid 1px $sideBoxBorders;
+        width: 75px;
+        height: 40px;
+        border-radius: 3px;
+        padding-left: 22px;
+      }
+
+      .priceField:hover {
+        border: solid 1px $hoverBorder;
+        background: transparent;
+      }
+
+
+      span {
+        background: transparent;
+      }
+
+      .price-search {
+        color: $filterBlk;
+        text-align: middle;
+        width: 40px;
+        height: 40px;
+        border: solid 1px $sideBoxBorders;
+        border-radius: 3px;
+        background: transparent;
+        background: $filterWht;
+      }
+
+      .price-search:hover {
+        border: solid 1px $hoverBorder;
+      }
+    }
+
+    .block3 {
+      @include categoryBox();
+      border-bottom: solid 1px $browseButtonBorder;
+
+      .palette{
+        width: 218px;
+        height: 27px;
+        display: inline-block;
+        background-color: transparent;
+        margin-left: 5px;
+      }
+
+      .colorFilter {
+        width: 22px;
+        height: 22px;
+        border-radius: 3px;
+        border: solid 1px $sideBoxBorders;
+        margin: 0px 3px 0px 0px;
+        box-sizing: border-box;
+        float: left;
+      }
+
+      .red {
+        background-color: $filterRed;
+      }
+
+      .orange {
+        background-color: $filterOj;
+      }
+
+      .yellow {
+        background-color: $filterYellow;
+      }
+
+      .green {
+        background-color: $filterGrn;
+      }
+
+      .blue {
+        background-color: $filterBlue;
+      }
+
+      .purple {
+        background-color: $filterPurp;
+      }
+
+      .black {
+        background-color: $filterBlk;
+      }
+
+      .white {
+        background-color: $filterWht;
+      }
+    }
+
+    .block4 {
+      @include categoryBox();
+      clear: both;
+      border-bottom: solid 1px $browseButtonBorder;
+      height: 85px;
+      color: #0192B5;
+
+      .optionWrap{
+        width: 219px;
+        height: 25px;
+        display: block;
+        background-color: transparent;
+        color: #0192B5;
+
+        .checkbox-link{
+          width: 16px;
+          height: 16px;
+          line-height: 1em;
+          float: left;
+          display: inline-block;
+          margin-top: 2px;
+          color: #0192B5;
+        }
+
+        a {
+          vertical-align: middle;
+          height: 25px;
+          line-height: 1px;
+          margin-left: 2px;
+          color: #0192B5;
+        }
+      }
+      .customizeBox{
+        margin-top: -17px;
+      }
+    }
+
+    .block5 {
+      @include categoryBox();
+      clear: both;
+      height: 120px;
+      border-bottom: solid 1px $browseButtonBorder;
+    }
+
+    .locWrap {
+      width: 219px;
+      height: 25px;
+      display: block;
+      background-color: transparent;
+
+      input {
+        width: 18px;
+        margin-right: 5px;
+      }
+
+      a {
+        display: inline-block;
+        vertical-align: middle;
+        color: #0192B5;
+      }
+    }
+    .locLink {
+      line-height: 2.4em;
+      size: 13px;
+      font-family: Arial, sans-serif;
+    }
+
+    .block6 {
+      @include categoryBox();
+      height: 62px;
+      padding-bottom: 4px;
+
+      .selectMenu {
+        height: 38px;
+        border: solid 1px $sideBoxBorders;
+        border-radius: 3px;
+        -webkit-appearance: none;
+        background-color: transparent;
+        color: $labelFontColor;
+        font-size: 13px;
+        padding-left: 15px;
+        width: 16.6em;
+      }
+
+      .selectMenu::after{
+        font-style: normal;
+        font-weight: 400;
+        text-decoration: none;
+        white-space: nowrap;
+        vertical-align: middle;
+        color: $sideBoxBorders;
+        content: '▾';
+        font-size: 8px;
+        line-height: 8px;
+        pointer-events: none;
+        right: 10px;
+        top: 16px;
+        position: absolute;
+      }
+
+      .selectMenu:hover {
+        border: solid 1px $hoverBorder;
+      }
+    }
+    .sectionLabel{
+      text-decoration: none;
+      font-size: 12px;
+      color: $linkTextColor;
+      background-color: transparent;
+
+      span{
+        font-size: 12px;
+      }
+
+  }
+  .sectionLabel a:hover {
+    text-decoration: underline;
+  }
+
+/*Product Grid*/
+
+.productBox {
     @include span-columns(9);
     width: 717px;
     float: right;
     padding: 0;
     margin-top: 50px;
-}
+    font-size: 13px;
+    img {
+        width: 222px;
+    }
 
-li {
-    @include span-columns(3 of 9);
-    height: 220px;
-    width: 225px;
-    background: #FFFFFF;
-    margin: 0 5px 10px;
-    border: 1px solid #B2B2B2;
-    font-size: 16px;
+    .belowTitle {
+        margin-top: 20px;
+        display: inline;
+    }
+
+    .priceAndCurrency {
+        float: right;
+        margin-right: 15px;
+    }
+
+    .dataTitle {
+        padding-left: 12px;
+        white-space: nowrap;
+        margin-bottom: 17px;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-family: $enavfont;
+    }
+
+    .dataShop {
+        display: inline;
+        color: #B2B2B2;
+        margin-left: 12px;
+    }
+
+    .dataPrice {
+        display: inline;
+        color: #7BBE4C;
+    }
+
+    .dataCurrencyCode {
+        display: inline;
+        color: #7BBE4C;
+    }
+
+    ul {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    li {
+        list-style-type: none;
+        height: 235px;
+        border: 1px solid #d7d7d7;
+        background-color: white;
+        margin-bottom: 25px;
+        border-radius: 3px;
+        @include span-columns(3 of 9);
+        @include omega(3n);
+    }
 }

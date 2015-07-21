@@ -1,6 +1,3 @@
-var items =
-
-
 {
 "count": 50100,
 "results": [
